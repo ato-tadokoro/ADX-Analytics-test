@@ -21,11 +21,10 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="logo" href="#top" data-track="nav_logo">Tadokoro Test</a>
+      <a class="logo" href="#top">Tadokoro Test</a>
       <nav class="nav" aria-label="メインナビゲーション">
-        <a href="#about" data-track="nav_about">概要</a>
-        <a href="#campaign" data-track="nav_campaign">チラシ</a>
-        <a href="#contact" data-track="nav_contact">反応確認</a>
+        <a href="#about">概要</a>
+        <a href="#campaign">チラシ</a>
       </nav>
     </header>
 
@@ -33,23 +32,19 @@
       <section class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Flyer Analytics Test</p>
-          <h1>Analyticsテストページ</h1>
+          <h1>Analyticsテスト</h1>
           <p class="lead">
             ADX Analyticsテスト用のサイトです。
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact" data-track="hero_cta">
-              反応ボタンへ
+            <a class="button primary" href="#campaign">
+              確認項目を見る
             </a>
-            <button class="button ghost" type="button" data-track="hero_test_click">
-              クリック計測テスト
-            </button>
           </div>
         </div>
         <div class="hero-card" aria-label="計測確認内容">
           <span class="card-label">Test</span>
           <strong>ADX</strong>
-          <p>チラシ経由のアクセス確認用です。あとから GA4 タグを head に追加できます。</p>
           <dl>
             <div>
               <dt>Source</dt>
@@ -57,7 +52,7 @@
             </div>
             <div>
               <dt>Check</dt>
-              <dd>PV / Click</dd>
+              <dd>PV</dd>
             </div>
           </dl>
         </div>
@@ -67,45 +62,32 @@
         <p class="section-kicker">About</p>
         <h2>このページの目的</h2>
         <p>
-          チラシを見た人がページに来たか、ページ内のボタンを押したかを確認するための
-          軽い検証ページです。内容はダミーなので、計測テストに集中できます。
+          チラシを見た人がページに来たかを確認するための検証ページです。
         </p>
       </section>
 
       <section class="section feature-grid" id="campaign" aria-label="チラシ確認項目">
-        <article class="feature-card" data-track="card_page_view">
+        <article class="feature-card">
           <span>01</span>
           <h3>ページ表示</h3>
           <p>チラシの QRコードやURLからアクセスされたかを確認します。</p>
         </article>
-        <article class="feature-card" data-track="card_cta_click">
+        <article class="feature-card">
           <span>02</span>
-          <h3>CTAクリック</h3>
-          <p>興味を持った人がボタンを押したかを確認します。</p>
+          <h3>UTM確認</h3>
+          <p>GA4で参照元 / メディアが flyer / qr になるか確認します。</p>
         </article>
-        <article class="feature-card" data-track="card_ga4_ready">
+        <article class="feature-card">
           <span>03</span>
-          <h3>GA4追加予定</h3>
-          <p>登録後に GA4 のタグを head へ貼り付けて確認します。</p>
+          <h3>GA4確認</h3>
+          <p>トラフィック獲得レポートで流入元を確認します。</p>
         </article>
       </section>
 
-      <section class="contact" id="contact">
-        <div>
-          <p class="section-kicker">Reaction</p>
-          <h2>反応確認ボタン</h2>
-          <p>このボタンのクリックを ADX / GA4 側で確認する想定です。</p>
-        </div>
-        <button class="button primary" type="button" data-track="flyer_reaction_click">
-          詳細を見たい
-        </button>
-      </section>
     </main>
 
     <footer class="footer">
-      <small>&copy; 2026 Tadokoro Test. Built for ADX Analitics testing.</small>
+      <small>&copy; 2026 Tadokoro Test. Built for ADX Analytics testing.</small>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
