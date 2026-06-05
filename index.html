@@ -8,7 +8,7 @@
       content="チラシからの流入を確認するためのテストページです。"
     >
     <title>チラシ流入テスト | ADX Analytics</title>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMW2QWFWDC"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -16,6 +16,13 @@
       gtag('js', new Date());
 
       gtag('config', 'G-PMW2QWFWDC');
+    </script>-->
+    <!-- AdX Tracking Script -->
+    <script>
+      fetch(
+        "https://client-management-test.adx-co.jp/custom_tracking?utm_source=posting&utm_campaign=mrmbl1130",
+        { method: "GET" }
+      );
     </script>
     <link rel="stylesheet" href="styles.css">
   </head>
